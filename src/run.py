@@ -2,6 +2,7 @@ import sqlalchemy as sa
 import sqlalchemy.orm as so
 from microblog import app, db
 from microblog.models import User, Post
+from microblog import cli
 
 
 @app.shell_context_processor

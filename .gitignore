@@ -43,3 +43,6 @@ Thumbs.db
 
 # Flask Env
 .flaskenv
+
+# Flask Babel Translate
+messages.pot
