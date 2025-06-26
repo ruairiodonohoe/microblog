@@ -1,8 +1,10 @@
 import sqlalchemy as sa
 import sqlalchemy.orm as so
-from microblog import app, db
+from microblog import create_app, db
 from microblog.models import User, Post
-from microblog import cli
+
+
+app = create_app()
 
 
 @app.shell_context_processor
