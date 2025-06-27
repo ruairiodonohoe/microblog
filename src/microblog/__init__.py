@@ -52,7 +52,7 @@ def create_app(config_class=Config):
 
     app.register_blueprint(cli_bp)
 
-    if not app.debug:
+    if not app.debug and not app.testing:
         if app.config["MAIL_SERVER"]:
             auth = None
             if app.config["MAIL_USERNAME"] or app.config["MAIL_PASSWORD"]:
