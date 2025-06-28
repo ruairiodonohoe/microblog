@@ -163,7 +163,7 @@ def explore():
 @login_required
 def search():
     if not g.search_form.validate():
-        return redirect(url_for("main/explore"))
+        return redirect(url_for("main.explore"))
     page = request.args.get("page", 1, type=int)
     posts, total = Post.search(
         g.search_form.q.data, page, current_app.config["POSTS_PER_PAGE"]
