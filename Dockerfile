@@ -4,7 +4,7 @@ WORKDIR /src
 
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
-RUN pip install gunicorn
+RUN pip install gunicorn pymysql cryptography
 
 COPY src/ .
 COPY migrations migrations
