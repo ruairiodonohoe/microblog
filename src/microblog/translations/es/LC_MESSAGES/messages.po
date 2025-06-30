@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-06-25 22:26+0100\n"
+"POT-Creation-Date: 2025-06-30 23:10+0100\n"
 "PO-Revision-Date: 2025-06-25 22:24+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: es\n"
@@ -18,136 +18,141 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: src/microblog/__init__.py:25
+#: src/microblog/__init__.py:24
 msgid "Please log in to access this page."
 msgstr ""
 
-#: src/microblog/forms.py:12 src/microblog/forms.py:19
-#: src/microblog/forms.py:39
+#: src/microblog/auth/email.py:9
+msgid "[Microblog] Reset Your Password"
+msgstr ""
+
+#: src/microblog/auth/forms.py:11 src/microblog/auth/forms.py:18
+#: src/microblog/main/forms.py:12
 msgid "Username"
 msgstr ""
 
-#: src/microblog/forms.py:13 src/microblog/forms.py:21
-#: src/microblog/forms.py:73
+#: src/microblog/auth/forms.py:12 src/microblog/auth/forms.py:20
+#: src/microblog/auth/forms.py:43
 msgid "Password"
 msgstr ""
 
-#: src/microblog/forms.py:14
+#: src/microblog/auth/forms.py:13
 msgid "Remember Me"
 msgstr ""
 
-#: src/microblog/forms.py:15 src/microblog/routes.py:77
-#: src/microblog/templates/login.html:5
+#: src/microblog/auth/forms.py:14 src/microblog/auth/routes.py:35
+#: src/microblog/templates/auth/login.html:5
 msgid "Sign In"
 msgstr ""
 
-#: src/microblog/forms.py:20 src/microblog/forms.py:68
+#: src/microblog/auth/forms.py:19 src/microblog/auth/forms.py:38
 msgid "Email"
 msgstr ""
 
-#: src/microblog/forms.py:23 src/microblog/forms.py:75
+#: src/microblog/auth/forms.py:22 src/microblog/auth/forms.py:45
 msgid "Repeat Password"
 msgstr ""
 
-#: src/microblog/forms.py:25 src/microblog/routes.py:98
-#: src/microblog/templates/register.html:5
+#: src/microblog/auth/forms.py:24 src/microblog/auth/routes.py:56
+#: src/microblog/templates/auth/register.html:5
 msgid "Register"
 msgstr ""
 
-#: src/microblog/forms.py:40
-msgid "About me"
-msgstr ""
-
-#: src/microblog/forms.py:41 src/microblog/forms.py:64
-msgid "Submit"
-msgstr ""
-
-#: src/microblog/forms.py:62
-msgid "Say something"
-msgstr ""
-
-#: src/microblog/forms.py:69 src/microblog/forms.py:77
+#: src/microblog/auth/forms.py:39 src/microblog/auth/forms.py:47
 msgid "Request Password Reset"
 msgstr ""
 
-#: src/microblog/routes.py:38
-msgid "Your post is now live!"
-msgstr ""
-
-#: src/microblog/routes.py:52 src/microblog/templates/base.html:27
-msgid "Home"
-msgstr ""
-
-#: src/microblog/routes.py:70
+#: src/microblog/auth/routes.py:28
 msgid "Invalid username or password"
 msgstr ""
 
-#: src/microblog/routes.py:96
+#: src/microblog/auth/routes.py:54
 msgid "Congratulations, you are now a registered user!"
 msgstr ""
 
-#: src/microblog/routes.py:139
+#: src/microblog/auth/routes.py:68
+msgid "Check your email for the instructions to reset your password"
+msgstr ""
+
+#: src/microblog/auth/routes.py:71
+#: src/microblog/templates/auth/reset_password_request.html:5
+msgid "Reset Password"
+msgstr ""
+
+#: src/microblog/auth/routes.py:86
+msgid "Your password has been reset."
+msgstr ""
+
+#: src/microblog/main/forms.py:13
+msgid "About me"
+msgstr ""
+
+#: src/microblog/main/forms.py:14 src/microblog/main/forms.py:37
+#: src/microblog/main/forms.py:55
+msgid "Submit"
+msgstr ""
+
+#: src/microblog/main/forms.py:35
+msgid "Say something"
+msgstr ""
+
+#: src/microblog/main/forms.py:41 src/microblog/main/routes.py:189
+msgid "Search"
+msgstr ""
+
+#: src/microblog/main/forms.py:53
+msgid "Message"
+msgstr ""
+
+#: src/microblog/main/routes.py:41
+msgid "Your post is now live!"
+msgstr ""
+
+#: src/microblog/main/routes.py:55
+msgid "Home"
+msgstr ""
+
+#: src/microblog/main/routes.py:101
 msgid "Your changes have been saved."
 msgstr ""
 
-#: src/microblog/routes.py:144 src/microblog/templates/edit_profile.html:4
+#: src/microblog/main/routes.py:106 src/microblog/templates/edit_profile.html:4
 msgid "Edit Profile"
 msgstr ""
 
-#: src/microblog/routes.py:154 src/microblog/routes.py:174
+#: src/microblog/main/routes.py:116 src/microblog/main/routes.py:136
 #, python-format
 msgid "User %(username)s not found."
 msgstr ""
 
-#: src/microblog/routes.py:157
+#: src/microblog/main/routes.py:119
 msgid "You cannot follow yourself!"
 msgstr ""
 
-#: src/microblog/routes.py:161
+#: src/microblog/main/routes.py:123
 #, python-format
 msgid "You are following %(username)s!"
 msgstr ""
 
-#: src/microblog/routes.py:177
+#: src/microblog/main/routes.py:139
 msgid "You cannot unfollow yourself!"
 msgstr ""
 
-#: src/microblog/routes.py:181
+#: src/microblog/main/routes.py:143
 #, python-format
 msgid "You are not following %(username)s."
 msgstr ""
 
-#: src/microblog/routes.py:199 src/microblog/templates/base.html:30
+#: src/microblog/main/routes.py:161
 msgid "Explore"
 msgstr ""
 
-#: src/microblog/routes.py:215
-msgid "Check your email for the instructions to reset your password"
+#: src/microblog/main/routes.py:213
+msgid "Your message has been sent."
 msgstr ""
 
-#: src/microblog/routes.py:218
-#: src/microblog/templates/reset_password_request.html:5
-msgid "Reset Password"
-msgstr ""
-
-#: src/microblog/routes.py:233
-msgid "Your password has been reset."
-msgstr ""
-
-#: src/microblog/templates/404.html:4
-msgid "Not Found"
-msgstr ""
-
-#: src/microblog/templates/404.html:5 src/microblog/templates/500.html:6
-msgid "Back"
-msgstr ""
-
-#: src/microblog/templates/500.html:4
-msgid "An unexpected error has occurred"
-msgstr ""
-
-#: src/microblog/templates/500.html:5
-msgid "The administrator has been notified. Sorry for the inconvenience!"
+#: src/microblog/main/routes.py:216
+msgid "Send Message"
 msgstr ""
 
 #: src/microblog/templates/_post.html:14
@@ -155,20 +160,8 @@ msgstr ""
 msgid "%(username)s said %(when)s"
 msgstr ""
 
-#: src/microblog/templates/base.html:10
-msgid "Welcome to Microblog"
-msgstr ""
-
-#: src/microblog/templates/base.html:36
-msgid "Login"
-msgstr ""
-
-#: src/microblog/templates/base.html:40
-msgid "Profile"
-msgstr ""
-
-#: src/microblog/templates/base.html:43
-msgid "Logout"
+#: src/microblog/templates/_post.html:25
+msgid "Translate"
 msgstr ""
 
 #: src/microblog/templates/index.html:5
@@ -176,32 +169,32 @@ msgstr ""
 msgid "Hi, %(username)s!"
 msgstr ""
 
-#: src/microblog/templates/index.html:17 src/microblog/templates/user.html:41
+#: src/microblog/templates/index.html:17 src/microblog/templates/seach.html:12
+#: src/microblog/templates/user.html:44
 msgid "Newer posts"
 msgstr ""
 
-#: src/microblog/templates/index.html:22 src/microblog/templates/user.html:46
+#: src/microblog/templates/index.html:22 src/microblog/templates/seach.html:17
+#: src/microblog/templates/user.html:49
 msgid "Older posts"
 msgstr ""
 
-#: src/microblog/templates/login.html:7
-msgid "New User?"
+#: src/microblog/templates/messages.html:4
+msgid "Messages"
 msgstr ""
 
-#: src/microblog/templates/login.html:7
-msgid "Click to Register!"
+#: src/microblog/templates/messages.html:12
+#: src/microblog/templates/messages.html:17
+msgid "Newer messages"
 msgstr ""
 
-#: src/microblog/templates/login.html:9
-msgid "Forgot Your Password?"
+#: src/microblog/templates/seach.html:4
+msgid "Search Results"
 msgstr ""
 
-#: src/microblog/templates/login.html:10
-msgid "Click to Reset It"
-msgstr ""
-
-#: src/microblog/templates/reset_password.html:5
-msgid "Reset Your Password"
+#: src/microblog/templates/send_message.html:5
+#, python-format
+msgid "Send Message to %(recipient)s"
 msgstr ""
 
 #: src/microblog/templates/user.html:8
@@ -209,15 +202,18 @@ msgid "User"
 msgstr ""
 
 #: src/microblog/templates/user.html:11
+#: src/microblog/templates/user_popup.html:7
 msgid "Last seen on"
 msgstr ""
 
 #: src/microblog/templates/user.html:13
+#: src/microblog/templates/user_popup.html:9
 #, python-format
 msgid "%(count)d followers"
 msgstr ""
 
 #: src/microblog/templates/user.html:13
+#: src/microblog/templates/user_popup.html:9
 #, python-format
 msgid "%(count)d following"
 msgstr ""
@@ -227,10 +223,65 @@ msgid "Edit your profile"
 msgstr ""
 
 #: src/microblog/templates/user.html:20
+#: src/microblog/templates/user_popup.html:15
 msgid "Follow"
 msgstr ""
 
 #: src/microblog/templates/user.html:27
+#: src/microblog/templates/user_popup.html:22
 msgid "Unfollow"
 msgstr ""
+
+#: src/microblog/templates/user.html:32
+msgid "Send private message"
+msgstr ""
+
+#: src/microblog/templates/auth/login.html:7
+msgid "New User?"
+msgstr ""
+
+#: src/microblog/templates/auth/login.html:7
+msgid "Click to Register!"
+msgstr ""
+
+#: src/microblog/templates/auth/login.html:9
+msgid "Forgot Your Password?"
+msgstr ""
+
+#: src/microblog/templates/auth/login.html:10
+msgid "Click to Reset It"
+msgstr ""
+
+#: src/microblog/templates/auth/reset_password.html:5
+msgid "Reset Your Password"
+msgstr ""
+
+#: src/microblog/templates/errors/404.html:4
+msgid "Not Found"
+msgstr ""
+
+#: src/microblog/templates/errors/404.html:5
+#: src/microblog/templates/errors/500.html:6
+msgid "Back"
+msgstr ""
+
+#: src/microblog/templates/errors/500.html:4
+msgid "An unexpected error has occurred"
+msgstr ""
+
+#: src/microblog/templates/errors/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr ""
+
+#~ msgid "Welcome to Microblog"
+#~ msgstr ""
+
+#~ msgid "Login"
+#~ msgstr ""
+
+#~ msgid "Profile"
+#~ msgstr ""
+
+#~ msgid "Logout"
+#~ msgstr ""
 
